@@ -1,0 +1,37 @@
+/**
+ * Write a description of class Player here.
+ * 
+ * Steven, Thompson
+ * 2/11/16
+ */
+public class Player
+{
+    // instance variables - replace the example below with your own
+    private String name;
+    public int round;
+    public int score;
+    public static int totalRounds;
+    public static int totalScores;
+   
+    
+    public Player (String inName) //Set name
+    {
+        name = inName;
+
+    }
+    public String getName() //return name
+    {
+        return name;
+    }
+    public void setRounds(int rounds) //set rounds and add that to total
+    {
+        round = rounds;
+        totalRounds = totalRounds + rounds;
+    }
+    public void setScore(int Score) //set score and add that to total
+    {
+        totalScores = totalScores + Score;
+        score = Score;
+    }
+     
+}
