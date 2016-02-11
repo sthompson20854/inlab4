@@ -1,0 +1,42 @@
+/**
+ * Write a description of class Team here.
+ * 
+ * Thompson, Steven
+ * 2/11/16
+ */ 
+public class Team
+{
+    private String name;
+    private Player player1;
+    private Player player2;
+    private Player player3;
+    private Player player4;
+    public Team (String inName, Player p1, Player p2, Player p3, Player p4) //make name
+    {
+        name = inName;
+        player1 = p1;
+        player2 = p2;
+        player3 = p3;
+        player4 = p4;
+        
+    }
+    public void printStats() //printing it all
+    {
+        System.out.println( name + ":");
+        System.out.println( "Number of Rounds : " + Player.totalRounds);
+        System.out.println( "Total Score " + Player.totalScores);
+        System.out.println( "Round Average :" + (double)Player.totalScores/Player.totalRounds );
+        
+        System.out.print( player1.getName() + " ----> # Rounds: " + player1.round + ", Score: ");
+        System.out.println( player1.score + ", Round Average : " + (double)player1.score/player1.round);
+        
+        System.out.print( player2.getName() + " ----> # Rounds: " + player2.round + ", Score: ");
+        System.out.println(+ player2.score + ", Round Average : " + (double)player2.score/player2.round);
+        
+        System.out.print( player3.getName() + " ----> # Rounds: " + player3.round + ", Score: ");
+        System.out.println(+ player3.score + ", Round Average : " + (double)player3.score/player3.round);
+        
+        System.out.print( player4.getName() + " ----> # Rounds: " + player4.round + ", Score: ");
+        System.out.print(+ player4.score + ", Round Average : " + (double)player4.score/player4.round);
+    }
+}
